@@ -14,14 +14,18 @@ namespace OOP3_Back_Jack
             Card card = new Card(Suits.HEARTS, FaceValues.ACE);
             System.Diagnostics.Debug.WriteLine("hi");
             System.Diagnostics.Debug.WriteLine(card.ToString());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             Deck deck = new Deck();
             deck.Shuffle();
             System.Diagnostics.Debug.WriteLine(deck.DrawCard().ToString());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
