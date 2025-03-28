@@ -9,9 +9,10 @@ namespace OOP3_Back_Jack.Classes
 {
     class Player
     {
+
         public void Hit()
         {
-
+            
         }
 
         public void Stand()
