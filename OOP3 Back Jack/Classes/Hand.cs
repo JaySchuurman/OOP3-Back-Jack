@@ -36,11 +36,12 @@ namespace OOP3_Back_Jack.Classes
         public int checkTotal()
         {
             int total = 0;
+            for (int i = 0; i < cards.Count; i++)
+            {
+                total += cards[i].Value;
+            }
 
-            
-            
-
-            return 0;
+            return total;
         }
 
     }
