@@ -44,5 +44,13 @@ namespace OOP3_Back_Jack.Classes
             return total;
         }
 
+        public void Stand()
+        {
+            if (cards.Count < 2 || isBust || isStand)
+            {
+                return;
+            }
+            isStand = true;
+        }
     }
 }
