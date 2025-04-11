@@ -32,5 +32,12 @@ namespace OOP3_Back_Jack
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Deck deck = new Deck();
+            deck.Shuffle();
+            System.Diagnostics.Debug.WriteLine(deck.DrawCard().ToString());
+        }
     }
 }
