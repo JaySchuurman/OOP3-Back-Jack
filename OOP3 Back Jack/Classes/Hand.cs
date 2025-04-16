@@ -9,6 +9,7 @@ namespace OOP3_Back_Jack.Classes
 {
     public class Hand
     {
+        int scoreBoard;
         bool isBust;
         bool isStand;
         List<Card> cards = new List<Card>();
@@ -51,6 +52,15 @@ namespace OOP3_Back_Jack.Classes
                 return;
             }
             isStand = true;
+        }
+
+        public void Deal(Card card)
+        {
+            if (scoreBoard == 0)
+            {
+                return;
+            }
+            cards.Add(card);
         }
     }
 }
